@@ -75,7 +75,6 @@ p {
 /* Header section */
 #header {
 	position: fixed;
-	opacity:0.25;
 	z-index: 1000;
 	left: 0;
 	top: 0;
@@ -84,8 +83,7 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: blue;
-	opacity:0.25;
+	background-color: darkgreen;
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
