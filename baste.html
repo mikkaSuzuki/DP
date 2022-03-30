@@ -5,8 +5,12 @@
   <title>BASTE</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
     
 </head>
 
@@ -45,51 +49,71 @@
         <h1>Welcome to <span></span></h1>
         <h1>San Sebastian College - Recoletos de Cavite <span></span></h1>
         <h1>Main Campus <span></span></h1>
+        <img src="img/qr.png" style="max-height: 300px; max-width: 300px; float: right " > <h5> SCAN HERE </h5>
       </div>
+        
+        
+      
+        
     </div>
+      
   </section>
   <!-- End Home Section  -->
 
   <!-- Announcement Section -->
   <section id="announcements">
-    <div class="container-fluid">
-      <div class="announcement-top">
-        <h1 class="section-title">A<span>nnouncement</span>s</h1>
-      </div>
-      <div class="announcement-bottom">
-          
-          
-        <div class="announcement-item">
-          <div class="icon"><img src="img/lg.jpg"></div>
-          <h2>May 19, 2021</h2>
-          <p>Tune in on May 19, 2021 to the “Rekoleto Connect: Stories of Vocation Journeys". Be inspired by narratives of individuals who've answered the call to Holy Orders. Hosted by Reynaldo "Sir G" Geronimo and featuring Fr. Jovy Gallego, OAR as this month's guest, the online program which will be screened on FB Live is a project of the School's Augustinian Recollect Integral Formation Program for Students. </p>
-        </div>
-          
-        <div class="announcement-item">
-          <div class="icon"><img src="img/lg.jpg"></div>
-          <h2>May 13, 2021</h2>
-          <p>Regular holiday in observance of Eid’l Fitr</p>
-            <p>No Synchronus and Asynchronus Classes</p>
-        </div>
-          
-        <div class="announcement-item">
-          <div class="icon"><img src="img/lg.jpg"></div>
-          <h2>May 12, 2021</h2>
-          <p>2:00 PM</p>
-            <p>Office of the Formation, Mission and Identity is inviting you to a scheduled Zoom meeting. </p>
-            <p>Participants: K-JHS, SHS, andCollege Faculty Members, Non-Teaching Personnel, Academic Non-Teaching Personnel, and College Students</p>
-        </div>
-          
-        <div class="announcement-item">
-          <div class="icon"><img src="img/lg.jpg"></div>
-          <h2>May 3, 2021</h2>
-          <p>Office operations are suspended on Monday, May 3, 2021 and will resume the folliwing day, May 4, 2021. Employees who need to report at the Main Campus, such as the IMS Staff and faculty members, have to inform the HRDM Office</p>
-            <p> For your information and guidance.</p>
-        </div>
-       
+    
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-controls">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('img/1.jpg')"></li>
+      <li data-target="#carousel" data-slide-to="1" style="background-image:url('img/2.jpg')"></li>
+      <li data-target="#carousel" data-slide-to="2" style="background-image:url('img/3.jpg')"></li>
+      
+    </ol>
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+     <i class="fas fa-arrow-left" alt="Prev"> </i> 
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <i class="fas fa-arrow-right" alt="Next"></i>
+  </a>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image:url('img/1.jpg')">
+      <div class="container">
+         <h3> 05/19/2021</h3>
+         <p3>Tune in to the “Rekoleto Connect: Stories of Vocation Journeys". Be inspired by narratives of individuals who've answered the call to Holy Orders. Hosted by Reynaldo "Sir G" Geronimo and featuring Fr. Jovy Gallego, OAR as this month's guest, the online program which will be screened on FB Live is a project of the School's Augustinian Recollect Integral Formation Program for Students.</p3>
       </div>
     </div>
+    <div class="carousel-item" style="background-image:url('img/2.jpg')">
+        
+      <div class="container">
+          <h3> 05/13/2021</h3>
+        
+         <p3>Please be advised that Today, May 13, 2021, has been declared a regular holiday by President Rodrigo Duterte in observance of Eid'l Fitr (Feast of Ramadan). 
+Work operations in the School are therefore suspended today, and will resume on May 14, 2021 (Friday).
+SSC-R de Cavite joins the whole nation in extending warm wishes of a happy and peaceful celebration of Ramadan to our Muslim brothers and sisters.</p3>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image:url('img/3.jpg')">
+      <div class="container">
+          
+         <h3> 05/03/2021</h3>
+         <p3>Office operations are suspended on Monday, May 3, 2021 and will resume the following day, May 4,2021. Employees who need to report at the Main Campus, such as the IMS Staff and Faculty Members, have to inform the HRMD office.</p3>
+          
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+        </div>
+      
+       
+      
   </section>
+      <script src="bootstrap.bundle.min.js"></script>
   <!-- End Announcements Section -->
 
   <!-- Map Section -->
@@ -133,7 +157,10 @@ https://static.3dwayfinder.com/projects/d94e49d63c9f0292c47108a0b49607e2/Iglu3D/
       <div class="col-right">
         <h1 class="section-title">About <span>Us</span></h1>
         <h2>San Sebastian College - Recoletos de Cavite</h2>
-        <p>qweqwe</p>
+        <p>Experience a Tatak Rekoleto Tradition of Excellence and Community Life...</p>
+          <p> <span>Vision :</span> We envision San Sebastian College – Recoletos de Cavite as a trusted Catholic community
+of quality learning in the service of God in His creation and humanity.</p>
+          <p> <span>Mission:</span>We, the SSC-R de Cavite family, dedicate ourselves to the formation of community members into Christ-centered, professional, and socially responsible leaders of the society.</p>
         <a href="#" class="cta">Inquire Now</a>
       </div>
     </div>

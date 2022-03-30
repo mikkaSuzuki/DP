@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css';
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -33,6 +37,8 @@ p {
 	font-weight: 300;
 	letter-spacing: 0.05rem;
 }
+
+
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
@@ -60,13 +66,13 @@ p {
 	transition-property: background-color, color;
 }
 .cta:hover {
-	color: white;
+	color: wheat;
 	background-color: crimson;
 }
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: white;
+	color: wheat;
 }
 .brand h1 span {
 	color: crimson;
@@ -224,13 +230,15 @@ p {
 	padding: 0 50px;
 	justify-content: flex-start;
 }
+
+
 #home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
 	position: relative;
 	color: transparent;
-	animation: text_reveal 0.5s ease forwards;
+	animation: text_reveal 5s ease forwards;
 	animation-delay: 1s;
 }
 #home h1:nth-child(1) {
@@ -240,9 +248,10 @@ p {
 	animation-delay: 2s;
 }
 #home h1:nth-child(3) {
-	animation: text_reveal_name 0.5s ease forwards;
+	animation: text_reveal_name 5s ease forwards;
 	animation-delay: 3s;
 }
+
 #home h1 span {
 	position: absolute;
 	top: 0;
@@ -263,6 +272,54 @@ p {
 	animation-delay: 2.5s;
 }
 
+#home .qr{
+    
+    height: 20%;
+    width: 20%;
+    object-fit: cover;
+}
+
+h5 {
+  color: wheat;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+h5:before,
+h5:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 10px solid crimson;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+h5:before {
+  border-color: crimson crimson rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+h5:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) crimson crimson;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+
+
+
 /* End Home Section */
 
 /* Announcements Section */
@@ -273,63 +330,173 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#announcements .announcement-top {
-	max-width: 500px;
-	margin: 0 auto;
-}
-#announcements .announcement-bottom {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
-}
-#announcements .announcement-item {
-	flex-basis: 80%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: url(./img/qwe.jpg);
+
+
+.announcements .carousel-item{
+	min-height: 100vh;
+	background-position: center;
 	background-size: cover;
-	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
-	overflow: hidden;
-    height: 650px;
-    width: 550px;
+    opacity: 1;
 }
-#announcements .announcement-item::after {
+.announcements .carousel-item:before{
 	content: '';
 	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
+	left:0;
+	top:0;
 	width: 100%;
-	background-image: linear-gradient(30deg, #29323c 0%, #485563 30%);
-	opacity: 0.9;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
 	z-index: -1;
+    opacity: 1;
 }
-#announcements .announcement-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
+.announcements .carousel-item .container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+    opacity: 1;
 }
-#announcements .announcement-item h2 {
-	font-size: 3rem;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;
+.announcements .carousel-item h2{
+	font-size: 80px;
+	color: #ffffff;
+	margin:0 0 10px;
+	opacity: 0.5;
 }
-#announcements .announcement-item p {
-	color: white;
-	text-align: left;
+.announcements .carousel-item p{
+	font-size: 30px;
+	margin:0;
+	color: #eeeeee;
+	opacity:0.5;
+}
+.announcements .carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.announcements .carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
 }
 
+@keyframes fadeInLeft{
+	0%{
+		opacity: 1;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 1;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
 
+.announcements .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
 
+.announcements .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.announcements .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.announcements .carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+.announcements .carousel-control-next, 
+.announcements .carousel-control-prev{
+	height: 50px;
+	width: 50px;
+	opacity: 1;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.announcements .carousel-control-next:hover, 
+.announcements .carousel-control-prev:hover{
+   box-shadow: 0 0 10px #ffffff;
+}
+.announcements .carousel-control-next img, 
+.announcements .carousel-control-prev img{
+   width: 50px;
+}
+.announcements .carousel-control-next{
+	right: -90px;
+}
+.announcements .carousel-control-prev{
+	left: -90px;
+}
+
+/*responsive*/
+@media(max-width: 50px){
+  .announcements .carousel-control-next, 
+  .announcements .carousel-control-prev{
+  	display: none;
+  }
+  .announcements .carousel-indicators li{
+  	height: 60px;
+  	width: 60px;
+  }
+  .announcements .carousel-item h2{
+  	font-size: 45px;
+  }
+  .announcements .carousel-item p{
+  	font-size: 22px;
+  }
+}
+
+h3 {
+    color: wheat;
+	font-size: 2.5rem;
+    background: rgba(31, 30, 30,0.7);
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px; 
+    border: 15px solid transparent;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px 50px;
+    
+}
+p3 {
+	color: wheat;
+	font-size: 2.5rem;
+    background: rgba(31, 30, 30,0.7);
+    display: inline;
+    vertical-align: top;
+    border-radius: 15px; 
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image:url(./img/b1.png) 100 stretch;
+    text-align: justify;
+    
+}
 
 
 /* End Announcements Section */
@@ -452,6 +619,7 @@ p {
 }
 @keyframes text_reveal {
 	100% {
+       
 		color: white;
 	}
 }
@@ -461,6 +629,24 @@ p {
 		font-weight: 500;
 	}
 }
+
+
+
+
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+
+
+
+
+
 /* End Keyframes */
 
 
@@ -599,4 +785,6 @@ p {
 }
 
 /*test*/
+
+
 
