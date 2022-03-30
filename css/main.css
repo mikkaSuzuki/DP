@@ -1,0 +1,505 @@
+
+
+.info{
+   background: black;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url(../img/nightsky.jpg)center/cover fixed no-repeat;
+}
+
+.primary-color{
+    color: gold;
+}
+
+.info t2{
+    word-spacing: 0.2rem;
+}
+
+.info t2 {
+    transition: color 0.2s ease-in-out;
+}
+
+.info t2:hover{
+    color: cadetblue;
+    border-bottom : 2px solid cadetblue;
+        
+}
+
+.info t2 {
+    border-bottom : 2px gold ;
+}
+
+.info a {
+    transition: color 0.2s ease-in-out;
+}
+
+.info a:hover{
+    color: cadetblue;
+    border-bottom : 2px solid;
+        
+}
+
+.info a {
+    border-bottom : 2px dotted.. gold;
+    
+}
+/* ~~~HEADER*/
+#header{
+    min-height: calc(100vh - 91px);
+    background: 
+    url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.height-90{
+   min-height: calc(100vh - 91px); 
+    
+}
+
+.banner h3{
+    animation: fromLeft;
+    animation-duration: 3s;
+}
+
+/* EFFECTS*/
+@keyframes fromBot{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromBot2{
+    0%{
+        transform: translateY(-10px);    
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10);
+    }
+}
+
+
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+
+#top-icons img{
+  animation: shake 0.5s;
+  animation-iteration-count: 3s;
+}
+
+#header img{
+   animation: shake 0.5s;
+  animation-iteration-count: 3s; 
+}
+
+#flavors img{
+    animation: shake 0.5s;
+  animation-iteration-count: 3s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}  
+/* END EFFECTS*/
+
+
+
+.main-btn{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    font-size: 2rem;
+    color: tomato;
+    border: 2px solid;
+    box-shadow: 5px 10px 8px black;
+    animation: fromBot;
+    animation-duration: 3s;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    
+}
+
+.btn-primary{
+    font-size: 1.5rem;
+    color: tomato;
+    animation: fromBot;
+    animation-duration: 3s;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    background-color: transparent;
+    border: transparent;
+}
+
+.btn-primary:hover{
+    color:white;
+    background: transparent;
+    border: 2px solid white;
+}
+
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: black;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: fromBot2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+.header-link:hover {
+    color: darkred;
+}
+
+
+.shake-img{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient (rgb(0,0,0), rgb(0,0,0));
+    transition: all 2s ease;
+    
+}
+
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%);
+    color: lightcoral;
+    font-size: 2rem;
+    
+}
+
+
+
+
+#flavors{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/nightsky.jpg)center/cover fixed no-repeat;
+    
+}
+
+
+
+.special{
+    border: 2px solid #f1f1f1;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    box-shadow: 5px 10px 8px black;
+    position: relative;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: gold;
+}
+
+.special-text{
+    position: relative;
+    top: 0;
+    right: 10%;
+    padding: 0 0.4rem;
+}
+
+/*ABOUT*/
+h1{
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+}
+
+
+t2{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+
+/*NAVBAR*/
+.navbar{
+    background: transparent;
+    padding: 20px 20px;
+    transform: all 1s ease;
+}
+
+.navbar-background{
+    padding: 5px 20px;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    transition: all 1s ease;
+    color: white;
+}
+
+.navbar-brand:hover{
+    color:gold;
+}
+
+.nav-link{
+   color: white;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 23px;
+}
+
+.nav-link:hover{
+    color:yellow;
+}
+
+.nav-btn{
+    background: transparent;
+    color: tomato;
+    border: 2px solid tomato;
+    font-size: 23px;
+    transition: all 2s ease;
+}
+
+.nav-btn:hover{
+    color:gold;
+    border: 2px solid gold;
+    transform: rotate(10deg)
+    
+}
+
+.toggler-btn{
+    border: 2px solid tomato;
+    padding: 5px;
+    transition: all 2s ease;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: tomato;
+    transition: all 0.5s ease;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+
+
+
+
+/*END NAVBAR*/
+
+
+
+
+
+
+
+
+
+.flavors .h1{
+    color: pink;
+    
+}
+
+
+
+
+/* MENU */
+.card{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    border: 7px solid white;
+    
+}
+
+ .card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+     
+    
+}
+
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: cadetblue;
+    
+}
+/* END MENU */
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: tomato;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*images*/
+.carousel-inner{
+  margin: auto;
+}
+
+.carousel-item{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+.carousel-caption{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ 
+}
+/* END images*/
+
+
+.navbar{
+    background: black;
+    padding: 20px 20px;
+}
+
+
+/* AboutUs */
+.loc-pic{
+    position: relative;
+    background-color: transparent;
+    
+}
+.loc-image{
+    background-color: rgb(250,250,250);
+    background-color: rgba(0,0,0, 0.5);
+    border: solid 2px black;
+}
+
+
+/*END AboutUs*/
+
+/* TeamCard */
+.OwnerCard{
+    border: solid 2px black;
+    background-color: rgb(250,250,250);
+    background-color: rgba(0,0,0, 0.5);
+}
+
+o1{
+    color: tomato;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+
+o4{
+    color: cadetblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.owners-icon a{
+    color: tomato;
+    transition: all 2s ease-in-out;
+}
+/*END TeamCard */
+
+/* Contact */
+
+.height-60{
+    min-height: 60vh;
+}
+
+#contact .card{
+    background: rgba(0,0,0,0.5);
+    transition: all 2s ease;
+}
+
+#contact .card:hover{
+    background: rgba(0,0,0,0.8);
+    
+}
+
+#contact .card-header{
+    color:tomato;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#contact .input-group-text{
+    background: transparent;
+    border-color: white;
+    color: tomato;
+}
+
+#contact .card input{
+    color: tomato;
+}
+
+#contact .card input::placeholder{
+    color: tomato;
+}
+
+.contact -btn{
+    color: gold;
+    border-color: tomato;
+    background: transparent;
+    transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover{
+    background: transparent;
+    color: tomato;
+    border-color: tomato;
+}
+
+
+
+
+/*END Contact*/
+
